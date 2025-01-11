@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title> Webmaster Restaurant menu </Title>
+<style>
+   Body{font-style:Italic;}
+   Body{background:linear-gradient;}
+    .multicolortext {
+	background-image: linear-gradient(to left, violet, indigo, 	green, blue, #5e7509, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;}
+        Body{Background-color:#2be0c5;}
+        Body{color:#6584eb;}
+</style>
+</head>
+</head>
