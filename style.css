@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* General Body Styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: auto;
+  color: #222;
+}
+
+/* Header Section */
+.header {
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 5px 0;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 450px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Link Styling */
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center !important;
+}
+
+.center-block {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Centers images or block elements horizontally */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px; /* Optional: keeps your logo from being too large */
+  height: auto;
+}
+
+/* Styles main text box area with background and spacing */
+.text-box {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #222;
+}
+
+.black-link {
+  color: black;
+  text-decoration: none;
+}
+
+.black-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Food Item Container */
+.food-item-container {
+  display: flex;
+  flex-direction: column; /* stack title, image + text vertically */
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 20px 0 20px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Title inside container */
+.food-item-container > h2 {
+  width: 100%;
+  margin: 0 0 15px 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Horizontal row for image and text */
+.food-content-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Image styling */
+.right-image {
+  flex-shrink: 0;
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0;
+}
+
+/* Text next to image */
+.food-text {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* Paragraph inside food-text */
+.food-text p {
+  margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .header {
+    padding: 30px;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .center {
+    width: 80%;
+  }
+
+  .text-box {
+    padding: 15px;
+  }
+
+  .food-item-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .food-content-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .right-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .food-text {
+    font-size: 16px;
+  }
+}
