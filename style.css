@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 /* General Body Styling */
 body {
-  font-family: 'Open Sans', sans-serif;
   background-image: url("Background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,6 +12,13 @@ body {
   min-height: 100vh;
   height: auto;
   color: #222;
+}
+
+h1, h2, h3 {
+  font-family: "Georgia", serif;
+}
+p, nav, a {
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
 }
 
 /* Header Section */
